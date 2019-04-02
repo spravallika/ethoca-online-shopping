@@ -26,10 +26,10 @@ This structure contains one scenario in glue layer - src/test/features/  <br/>
 How to execute the test
 =======================
 <b>Windows </b><br/>
-Command Prompt -> Navigate to project path -> gradlew.bat build -i <br/>
+Command Prompt -> Navigate to project path -> gradlew.bat clean build -i <br/>
 
 <b>Mac OS/Linux </b><br/>
-Terminal -> Navigate to project path -> ./gradlew build -i <br/>
+Terminal -> Navigate to project path -> ./gradlew clean build -i <br/>
 
 This will trigger the test and execute on Chrome browser by default.  <br/>
 Edit the file at etc-qa-glue/src/test/resources/cucumber.properties to modify the OS and browser type  <br/>
