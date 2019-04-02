@@ -36,7 +36,7 @@ Edit the file at etc-qa-glue/src/test/resources/cucumber.properties to modify th
 
 Report
 ======
-A Custom report showing the test and steps result would be generated at the location /output/reports/glue/index.html  <br/>
+A Custom report showing the test and steps result would be generated at the location <b> /output/reports/glue/index.html </b>  <br/>
 Open the html file on browser to view the test results  <br/>
 
 Logging
