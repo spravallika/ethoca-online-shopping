@@ -1,10 +1,13 @@
 # ethoca-online-shopping
 This is a demo automation project that automates the basic flow of selecting a product, registering an account and proceeding through checkout in the application "http://automationpractice.com"
 
+Pre-requisites
+==============
+JDK 8
+
 Framework/Tech stack
 ====================
-Gradle - Build & Dependency management  
-Java 8  
+Gradle - Build & Dependency management 
 Selenium 3.14.0 - Page Object Model  
 Cucumber - BDD framework  
 Cucumber Guice - Dependency Injection  
