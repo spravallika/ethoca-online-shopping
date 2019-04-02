@@ -28,7 +28,6 @@ public class DriverFactory {
                 switch (OSType.valueOf(osType.toUpperCase())) {
                     case MAC:
                         System.setProperty("webdriver.chrome.driver", "../drivers/chromedriver");
-                        System.setProperty("webdriver.ie.driver", "../drivers/IEDriverServer");
                         System.setProperty("webdriver.gecko.driver", "../drivers/geckodriver");
                         break;
                     case WINDOWS:
