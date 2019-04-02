@@ -76,5 +76,6 @@ public class DriverFactory {
             logger.debug("*** Closing all the active browser sessions ***");
             webDriver.quit();
         }
+        logger.info("Test report generated at : "+"../output/reports/glue/index.html");
     }
 }
