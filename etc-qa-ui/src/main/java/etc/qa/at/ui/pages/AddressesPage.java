@@ -32,7 +32,7 @@ public class AddressesPage extends BasePage {
             commonUtils.waitForVisible(driver, CommonUtils.getTimeoutValue(), addressesHeading);
             commonUtils.scrollToViewAndClick(proceedToCheckout, driver);
             logger.debug("Clicked on Proceed to Checkout button");
-            ReportUtil.logInfo(driver,"Clicked on Proceed to Checkout button",true);
+            ReportUtil.logInfo(driver,"Clicked on Proceed to Checkout button",false);
         } catch (Exception e) {
             throw new EtcRuntimeException(e, ExceptionLevel.MINOR, ExceptionCause.APP_RELATED, "Unable to find Proceed to checkout button");
         }

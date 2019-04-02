@@ -30,7 +30,7 @@ public class ShoppingCartSummary extends BasePage {
         try {
             commonUtils.scrollToViewAndClick(proceedToCheckout,driver);
             logger.debug("Clicked on Proceed to Checkout to continue with the order");
-            ReportUtil.logInfo(driver,"Clicked on Proceed to Checkout to continue with the order",true);
+            ReportUtil.logInfo(driver,"Clicked on Proceed to Checkout to continue with the order",false);
         } catch (Exception e) {
             throw new EtcRuntimeException(e, ExceptionLevel.MINOR, ExceptionCause.APP_RELATED, "Unable to Proceed to checkout from shopping cart summary");
         }

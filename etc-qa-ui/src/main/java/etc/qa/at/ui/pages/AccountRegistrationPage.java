@@ -121,7 +121,7 @@ public class AccountRegistrationPage extends BasePage {
     public void clickSubmitAndRegister() {
         try {
             commonUtils.scrollToViewAndClick(registerButton, driver);
-            ReportUtil.logInfo(driver,"Clicked on Register button",true);
+            ReportUtil.logInfo(driver,"Clicked on Register button",false);
         } catch (Exception e) {
             throw new EtcRuntimeException(e, ExceptionLevel.MINOR, ExceptionCause.APP_RELATED, "Unable to find Register button to complete registration process");
         }

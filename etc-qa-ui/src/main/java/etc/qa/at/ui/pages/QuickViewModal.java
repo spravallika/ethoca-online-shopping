@@ -55,7 +55,7 @@ public class QuickViewModal extends BasePage {
             Select sizeDropdown = new Select(sizeOptions);
             sizeDropdown.selectByVisibleText(size);
             logger.debug("Selected size : " + size + " for the product");
-            ReportUtil.logInfo(driver, "Selected size : " + size + " for the product", true);
+            ReportUtil.logInfo(driver, "Selected size : " + size + " for the product", false);
         } catch (Exception e) {
             throw new EtcRuntimeException(e, ExceptionLevel.MINOR, ExceptionCause.APP_RELATED, "Unable to find select Size for the product");
         }
@@ -65,7 +65,7 @@ public class QuickViewModal extends BasePage {
         try {
             commonUtils.waitForVisibleAndClick(driver, CommonUtils.getTimeoutValue(), addToCartButton);
             logger.debug("Added the product to cart");
-            ReportUtil.logInfo(driver, "Added the product to cart", true);
+            ReportUtil.logInfo(driver, "Added the product to cart", false);
         } catch (Exception e) {
             throw new EtcRuntimeException(e, ExceptionLevel.MINOR, ExceptionCause.APP_RELATED, "Unable to add product to cart");
         }
@@ -75,7 +75,7 @@ public class QuickViewModal extends BasePage {
         try {
             commonUtils.scrollToViewAndClick(continueShoppingButton, driver);
             logger.debug("Clicked on Continue Shopping Button");
-            ReportUtil.logInfo(driver, "Clicked on Continue Shopping Button", true);
+            ReportUtil.logInfo(driver, "Clicked on Continue Shopping Button", false);
             driver.switchTo().defaultContent();
         } catch (Exception e) {
             throw new EtcRuntimeException(e, ExceptionLevel.MINOR, ExceptionCause.APP_RELATED, "Unable to find Continue shopping button");
@@ -86,10 +86,10 @@ public class QuickViewModal extends BasePage {
         try {
             commonUtils.moveToElement(cartButton, driver);
             logger.debug("Clicked on cart to view items");
-            ReportUtil.logInfo(driver, "Clicked on cart to view items", true);
+            ReportUtil.logInfo(driver, "Clicked on cart to view items", false);
             commonUtils.scrollToViewAndClick(checkoutOption, driver);
             logger.debug("Clicked on checkout option to proceed");
-            ReportUtil.logInfo(driver, "Clicked on checkout option to proceed", true);
+            ReportUtil.logInfo(driver, "Clicked on checkout option to proceed", false);
         } catch (Exception e) {
             throw new EtcRuntimeException(e, ExceptionLevel.MINOR, ExceptionCause.APP_RELATED, "Unable to view the cart to proceed to checkout");
         }

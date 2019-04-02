@@ -36,7 +36,7 @@ public class AuthenticationPage extends BasePage {
             commonUtils.scrollToWebelement(driver, emailAddressInput);
             emailAddressInput.sendKeys(emailAddress.split("@")[0] + RandomString.make(4) + "@" + emailAddress.split("@")[1]);
             logger.debug("Entered email address " + emailAddress + " for account registration");
-            ReportUtil.logInfo(driver, "Entered email address " + emailAddress + " for account registration", true);
+            ReportUtil.logInfo(driver, "Entered email address " + emailAddress + " for account registration", false);
         } catch (Exception e) {
             throw new EtcRuntimeException(e, ExceptionLevel.MINOR, ExceptionCause.APP_RELATED, "Unable to find EmailAddress Field to provide input");
         }
@@ -46,7 +46,7 @@ public class AuthenticationPage extends BasePage {
         try {
             commonUtils.scrollToViewAndClick(createAccountButton, driver);
             logger.debug("Clicked on Create Account button");
-            ReportUtil.logInfo(driver, "Clicked on Create Account button", true);
+            ReportUtil.logInfo(driver, "Clicked on Create Account button", false);
         } catch (Exception e) {
             throw new EtcRuntimeException(e, ExceptionLevel.MINOR, ExceptionCause.APP_RELATED, "Unable to find Create account button");
         }

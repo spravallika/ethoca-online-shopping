@@ -19,6 +19,6 @@ public class CommonHelper {
     public void launchURL(WebDriver driver) {
         driver.navigate().to(ConfigReader.getProperty("WebsiteUrl"));
         logger.debug("Launched shopping website");
-        ReportUtil.logInfo(driver, "Launched shopping website", true);
+        ReportUtil.logInfo(driver, "Launched shopping website", false);
     }
 }

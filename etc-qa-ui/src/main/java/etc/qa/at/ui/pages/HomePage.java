@@ -42,7 +42,7 @@ public class HomePage extends BasePage {
         try {
             commonUtils.moveToElement(womenMenuLink, driver);
             logger.debug("Hovered on Women menu link");
-            ReportUtil.logInfo(driver, "Hovered on Women menu link", true);
+            ReportUtil.logInfo(driver, "Hovered on Women menu link", false);
         } catch (Exception e) {
             throw new EtcRuntimeException(e, ExceptionLevel.MINOR, ExceptionCause.APP_RELATED, "Unable to find Women menu link");
         }
@@ -52,7 +52,7 @@ public class HomePage extends BasePage {
         try {
             commonUtils.waitForVisibleAndClick(driver, CommonUtils.getTimeoutValue(), summerDressesLink);
             logger.debug("Clicked on Summer Dresses link");
-            ReportUtil.logInfo(driver, "Clicked on Summer Dresses link", true);
+            ReportUtil.logInfo(driver, "Clicked on Summer Dresses link", false);
         } catch (Exception e) {
             throw new EtcRuntimeException(e, ExceptionLevel.MINOR, ExceptionCause.APP_RELATED, "Unable to find Summer dresses link under women's section");
         }

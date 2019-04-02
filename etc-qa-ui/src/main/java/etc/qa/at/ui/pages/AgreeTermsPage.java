@@ -31,7 +31,7 @@ public class AgreeTermsPage extends BasePage {
         try {
             commonUtils.scrollToViewAndClick(agreeTermsCheckbox, driver);
             logger.debug("Clicked on user agreement terms and conditions checkbox");
-            ReportUtil.logInfo(driver, "Clicked on user agreement terms and conditions checkbox", true);
+            ReportUtil.logInfo(driver, "Clicked on user agreement terms and conditions checkbox", false);
         } catch (Exception e) {
             throw new EtcRuntimeException(e, ExceptionLevel.MINOR, ExceptionCause.APP_RELATED, "Unable to find Agree terms & conditions checkbox");
         }
@@ -41,7 +41,7 @@ public class AgreeTermsPage extends BasePage {
         try {
             commonUtils.scrollToViewAndClick(proceedToCheckout, driver);
             logger.debug("Proceeding to checkout");
-            ReportUtil.logInfo(driver, "Proceeding to checkout", true);
+            ReportUtil.logInfo(driver, "Proceeding to checkout", false);
         } catch (Exception e) {
             throw new EtcRuntimeException(e, ExceptionLevel.MINOR, ExceptionCause.APP_RELATED, "Unable to find Proceed to checkout button");
         }

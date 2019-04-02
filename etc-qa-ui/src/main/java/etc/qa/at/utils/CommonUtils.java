@@ -150,7 +150,7 @@ public class CommonUtils {
         waitForVisible(driver, getTimeoutValue(), element);
         element.sendKeys(value);
         logger.debug("Setting value of " + element.getAttribute("id") + " to : " + value);
-        ReportUtil.logInfo(driver, "Setting value of " + element.getAttribute("id") + " to : " + value, true);
+        ReportUtil.logInfo(driver, "Setting value of " + element.getAttribute("id") + " to : " + value, false);
     }
 
     /**

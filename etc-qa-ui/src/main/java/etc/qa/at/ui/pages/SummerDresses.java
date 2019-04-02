@@ -34,7 +34,7 @@ public class SummerDresses extends BasePage {
             By quickViewDressType = By.xpath(String.format("//a[@title='%s']/following-sibling::a", dressType));
             commonUtils.waitForVisibleAndClick(driver, CommonUtils.getTimeoutValue(), quickViewDressType);
             logger.debug("Clicked on Quick View option for printed chiffon dress");
-            ReportUtil.logInfo(driver,"Clicked on Quick View option for printed chiffon dress",true);
+            ReportUtil.logInfo(driver,"Clicked on Quick View option for printed chiffon dress",false);
             scopedData.putAttributeValue("DressType", String.class, dressType);
         } catch (Exception e) {
             throw new EtcRuntimeException(e, ExceptionLevel.MINOR, ExceptionCause.APP_RELATED, "Unable to quick view the selected product to view product details");

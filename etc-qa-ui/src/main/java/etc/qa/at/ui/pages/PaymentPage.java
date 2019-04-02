@@ -35,11 +35,11 @@ public class PaymentPage extends BasePage {
             By productPath = By.xpath("//*[contains(text(),'" + scopedData.getAttributeValue("DressType").toString() + "')]");
             if (commonUtils.isElementPresent(productPath, driver)) {
                 logger.debug("Selected product : " + scopedData.getAttributeValue("DressType").toString() + " : is available on Payment tab");
-                ReportUtil.logInfo(driver, "Selected product : " + scopedData.getAttributeValue("DressType").toString() + " : is available on Payment tab", true);
+                ReportUtil.logInfo(driver, "Selected product : " + scopedData.getAttributeValue("DressType").toString() + " : is available on Payment tab", false);
                 return true;
             } else {
                 logger.debug("Selected product : " + scopedData.getAttributeValue("DressType").toString().toUpperCase() + " : is not available on Payment tab");
-                ReportUtil.logInfo(driver, "Selected product : " + scopedData.getAttributeValue("DressType").toString() + " : is available on Payment tab", true);
+                ReportUtil.logInfo(driver, "Selected product : " + scopedData.getAttributeValue("DressType").toString() + " : is available on Payment tab", false);
                 return false;
             }
         } catch (Exception e) {
