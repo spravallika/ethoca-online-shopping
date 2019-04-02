@@ -13,9 +13,11 @@
     <Loggers>
         <Logger name="etc.qa.at" level="DEBUG" additivity="false">
             <AppenderRef ref="File"/>
+            <AppenderRef ref="CONSOLE"/>
         </Logger>
         <Root level="DEBUG">
             <AppenderRef ref="File"/>
+            <AppenderRef ref="CONSOLE"/>
         </Root>
     </Loggers>
 
