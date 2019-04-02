@@ -13,7 +13,7 @@ ExtentReports - Reporting
 
 Project Structure
 =================
-Modules:
+Modules <br/>
 etc-qa-glue  ***** Contains Cucumber features(scenarios) and step definitions <br/>
 etc-qa-steps ***** Contains Steps implementation  <br/>
 etc-qa-ui    ***** Contains UI Pages, webelements & actions, reporting and logging utils  <br/>
