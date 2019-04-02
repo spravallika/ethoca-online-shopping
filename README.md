@@ -7,12 +7,12 @@ JDK 8
 
 Framework/Tech stack
 ====================
-Gradle - Build & Dependency management 
-Selenium 3.14.0 - Page Object Model  
-Cucumber - BDD framework  
-Cucumber Guice - Dependency Injection  
-Log4j2 - Logging  
-ExtentReports - Reporting  
+Gradle (Bundled) - Build & Dependency management <br/>
+Selenium 3.14.0 - Page Object Model<br/>
+Cucumber - BDD framework<br/>
+Cucumber Guice - Dependency Injection<br/>
+Log4j2 - Logging<br/>
+ExtentReports - Reporting<br/>
 
 Project Structure
 =================
