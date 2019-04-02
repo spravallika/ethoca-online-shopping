@@ -45,14 +45,17 @@ public class DriverFactory {
                 case CHROME:
                     webDriver = new ChromeDriver(new ChromeOptions().addArguments("--start-maximized"));
                     logger.debug("Launching webdriver on browser : " + browserType + " on OS : " + osType);
+                    webDriver.manage().window().maximize();
                     return webDriver;
                 case IE:
                     webDriver = new InternetExplorerDriver();
                     logger.debug("Launching webdriver on browser : " + browserType + " on OS : " + osType);
+                    webDriver.manage().window().maximize();
                     return webDriver;
                 case FIREFOX:
                     webDriver = new FirefoxDriver(new FirefoxOptions().addArguments("--start-maximized"));
                     logger.debug("Launching webdriver on browser : " + browserType + " on OS : " + osType);
+                    webDriver.manage().window().maximize();
                     return webDriver;
                 case SAFARI:
                     webDriver = new SafariDriver();
