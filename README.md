@@ -41,5 +41,5 @@ Open the html file on browser to view the test results  <br/>
 
 Logging
 =======
-Test step logs would be generated after test execution and can be logged into ecommere.log file  <br/>
+This project uses log4j2 for application logging. Test step logs are written to ecommere.log file  <br/>
 
