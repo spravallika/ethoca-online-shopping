@@ -22,11 +22,10 @@ This structure contains one scenario in glue layer - src/test/features/  <br/>
 
 How to execute the test
 =======================
-Windows
-=======
+<b>Windows </b><br/>
 Command Prompt -> Navigate to project path -> gradlew.bat build  <br/>
-Mac OS/Linux
-============
+
+<b>Mac OS/Linux </b><br/>
 Terminal -> Navigate to project path -> ./gradlew build  <br/>
 
 This will trigger the test and execute on Chrome browser by default.  <br/>
