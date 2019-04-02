@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+
+    <Appenders>
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{ISO8601}] [%-5p] [%t] %C{1} [%L]: %m%n"/>
+        </Console>
+        <File name="File" fileName="../ecommerce.log" immediateFlush="true" append="true">
+            <PatternLayout pattern="[%d{ISO8601} %-5level] %logger{36} - %msg%n"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="etc.qa.at" level="DEBUG" additivity="false">
+            <AppenderRef ref="File"/>
+        </Logger>
+        <Root level="DEBUG">
+            <AppenderRef ref="File"/>
+        </Root>
+    </Loggers>
+
+</Configuration>

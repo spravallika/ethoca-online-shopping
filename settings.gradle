@@ -1,0 +1,5 @@
+rootProject.name='ethoca-online-shopping'
+include 'etc-qa-steps'
+include 'etc-qa-glue'
+include 'etc-qa-ui'
+

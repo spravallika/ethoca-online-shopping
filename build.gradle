@@ -1,0 +1,27 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+group 'ethoca.qa'
+
+version '1.0.SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+allprojects {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+    compileJava.options.encoding = "UTF-8"
+
+    project.ext {
+        cucumberVersion = '1.2.5'
+        junitVersion = '4.12'
+    }
+
+    repositories {
+        mavenCentral()
+    }
+}
