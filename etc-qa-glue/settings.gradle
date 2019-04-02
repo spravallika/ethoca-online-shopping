@@ -1,0 +1,5 @@
+rootProject.name='etc-qa-glue'
+include('etc-qa-steps')
+project(':etc-qa-steps').projectDir=new File(settingsDir,'../etc-qa-steps')
+include('etc-qa-ui')
+project(':etc-qa-ui').projectDir=new File(settingsDir,'../etc-qa-ui')

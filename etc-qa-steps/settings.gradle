@@ -1,0 +1,3 @@
+rootProject.name='etc-qa-steps'
+include('etc-qa-ui')
+project(':etc-qa-ui').projectDir=new File(settingsDir,'../etc-qa-ui')

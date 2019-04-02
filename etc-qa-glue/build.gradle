@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'ethoca.qa'
+version '1.0.SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+dependencies {
+    compile 'junit:junit:' + junitVersion
+    compile 'com.google.inject:guice:4.1.0'
+    compile 'info.cukes:cucumber-guice:' + cucumberVersion
+    compile 'info.cukes:cucumber-core:' + cucumberVersion
+    compile 'info.cukes:cucumber-java:' + cucumberVersion
+    compile 'info.cukes:cucumber-junit:' + cucumberVersion
+    compile 'org.apache.logging.log4j:log4j-api:2.10.0'
+    compile 'org.apache.logging.log4j:log4j-core:2.10.0'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.9.5'
+    compile 'com.aventstack:extentreports:3.1.5'
+    compile 'com.vimalselvam:cucumber-extentsreport:3.0.1'
+    compile project(':etc-qa-steps')
+    compile project(':etc-qa-ui')
+}
